@@ -16,9 +16,12 @@ This module can be used to generate word based diff for two strings.
 ``` js
     var worddiff = require('word-diff');
 
-    var diff = worddiff.diffString('what a great time to be alive', 'how great it is to be alive')
+    worddiff.diffString(
+        'what a great time to be alive',
+        'how great it is to be alive'
+    )
 
-    // diff:
+    // returns:
     [
         {'remove': 'what a ', 'add': 'how '},
         {'text': 'great '},
